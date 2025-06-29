@@ -1,0 +1,17 @@
+# Core Python libraries for numerical processing, FITS I/O, and image manipulation
+numpy>=1.20 # For numerical operations, array handling
+astropy>=5.0 # For FITS file handling (astropy.io.fits) and sigma_clip (astropy.stats)
+Pillow>=9.0 # For common image formats (TIFF, JPG, PNG) and some image operations
+
+# GUI Framework
+PyQt6>=6.0 # For the graphical user interface
+
+# Image processing and scientific computing libraries
+scipy>=1.7 # For various scientific computing tools (e.g., ndimage.convolve, stats)
+scikit-image>=0.19 # For advanced image processing algorithms (filters, restoration, etc.)
+PyWavelets>=1.0 # Dependency for scikit-image's wavelet-based functions (e.g., in estimate_sigma)
+
+# Optional, but recommended for some alignment/processing tasks if implemented later:
+# opencv-python-headless # Or opencv-python if full GUI components of OpenCV are ever needed by the app itself
+# fsspec # If cloud file access (e.g. S3) for FITS files is added via astropy/astroquery
+# matplotlib # For any plotting/charting if added to UI (e.g. histograms, curves display)
